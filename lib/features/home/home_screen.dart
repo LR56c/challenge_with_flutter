@@ -5,6 +5,8 @@ import 'package:challenge_with_flutter/router.gr.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 
+import '../../main.dart';
+
 @RoutePage()
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -37,6 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
       if (message.notification != null) {
         print('Message also contained a notification: ${message.notification}');
       }
+      showFlutterNotification(message);
     });
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
       print('Message clicked! ${message.messageId}');
