@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "326536334897",
+    "project_id": "rdemo-8f699",
+    "storage_bucket": "rdemo-8f699.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326536334897:android:3aaf422361a72ad4b9cf10",
+        "android_client_info": {
+          "package_name": "com.my.challenge_with_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdkTpTnBUBBIhBIcJUg0IPXFVx68ulG04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
