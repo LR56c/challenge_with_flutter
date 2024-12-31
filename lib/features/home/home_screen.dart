@@ -1,9 +1,11 @@
 import 'dart:async';
 
+
 import 'package:auto_route/auto_route.dart';
 import 'package:challenge_with_flutter/router.gr.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+
 
 import '../../main.dart';
 
@@ -17,7 +19,6 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance;
-
   @override
   void initState() {
     super.initState();
@@ -64,6 +65,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   context.router.push(const PaymentRoute());
                 },
                 child: Text('Payment')),
+            TextButton(
+                onPressed: () {
+                  context.router.push(const MapRoute());
+                },
+                child: Text('Map')),
             TextButton(
                 onPressed: () {
                   context.router.push(const PaymentRoute());

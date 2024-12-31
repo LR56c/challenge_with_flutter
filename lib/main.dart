@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:mapbox_maps_flutter/mapbox_maps_flutter.dart';
 
 import 'firebase_options.dart';
 
@@ -20,7 +21,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   FirebaseMessaging.onBackgroundMessage(_backgroundHandler);
-
+  MapboxOptions.setAccessToken('pk.eyJ1IjoibHI1NmMiLCJhIjoiY2t6YnVoeTRrMjh5aTJxcHJndnlxNzAzeiJ9.L100vV8I9VTkzlbc6umkvA');
   if (!kIsWeb) {
     await setupFlutterNotifications();
   }
