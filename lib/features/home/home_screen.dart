@@ -54,27 +54,33 @@ class _HomeScreenState extends State<HomeScreen> {
           title: const Text('Home'),
         ),
         body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             TextButton(
                 onPressed: () {
                   context.router.push(const SignInRoute());
                 },
-                child: Text('Signin')),
+                child: const Text('Signin')),
             TextButton(
                 onPressed: () {
                   context.router.push(const PaymentRoute());
                 },
-                child: Text('Payment')),
+                child: const Text('Payment')),
             TextButton(
                 onPressed: () {
                   context.router.push(const MapRoute());
                 },
-                child: Text('Map')),
+                child: const Text('Map')),
             TextButton(
                 onPressed: () {
                   context.router.push(const PaymentRoute());
                 },
-                child: Text('SMS'))
+                child: const Text('SMS')),
+            TextButton(
+                onPressed: () {
+                  context.router.push(const TodoRoute());
+                },
+                child: const Text('Todo'))
           ],
         ));
   }
