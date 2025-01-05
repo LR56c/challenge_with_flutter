@@ -29,5 +29,6 @@ class AppRouter extends RootStackRouter {
     AutoRoute(page: SmsRoute.page),
     AutoRoute(page: MapRoute.page),
     AutoRoute(page: TodoRoute.page),
+    AutoRoute(page: CounterRoute.page),
   ];
 }

@@ -80,7 +80,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 onPressed: () {
                   context.router.push(const TodoRoute());
                 },
-                child: const Text('Todo'))
+                child: const Text('Todo')),
+            TextButton(
+                onPressed: () {
+                  context.router.push(const CounterRoute());
+                },
+                child: const Text('Counter'))
           ],
         ));
   }
