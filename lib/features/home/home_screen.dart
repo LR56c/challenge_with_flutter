@@ -85,7 +85,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 onPressed: () {
                   context.router.push(const CounterRoute());
                 },
-                child: const Text('Counter'))
+                child: const Text('Counter')),
+            TextButton(
+                onPressed: () {
+                  context.router.push(const MentalSessionRoute());
+                },
+                child: const Text('Mental Session'))
           ],
         ));
   }
