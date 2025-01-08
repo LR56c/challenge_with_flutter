@@ -2,6 +2,7 @@ import 'dart:async';
 
 
 import 'package:auto_route/auto_route.dart';
+import 'package:challenge_with_flutter/features/christmas_cookies/christmas_cookies_screen.dart';
 import 'package:challenge_with_flutter/router.gr.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
@@ -90,7 +91,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 onPressed: () {
                   context.router.push(const MentalSessionRoute());
                 },
-                child: const Text('Mental Session'))
+                child: const Text('Mental Session')),
+            TextButton(
+                onPressed: () {
+                  context.router.push(const ChristmasCookiesRoute());
+                },
+                child: const Text('Christmas Cookies'))
           ],
         ));
   }
