@@ -20,11 +20,12 @@ class Routines extends _$Routines {
         imageUrl: 'https://picsum.photos/200/200',
         sessions: List.generate(5, (index) {
           final day = DateTime.now().subtract(Duration(days: index));
+          final random = Random(1000);
           final session = Session(
             id: const Uuid().v4(),
             title: 'Session $index',
             description: 'Description $index',
-            imageUrl: 'https://picsum.photos/200/200',
+            imageUrl: 'https://picsum.photos/200/200?random=$random',
             duration: Random().nextInt(480) + 120,
             isNew: DateTime.now().difference(day).inDays < 7,
             createdAt: day,
