@@ -31,6 +31,7 @@ dependencies:
   iconify_flutter: ^0.0.7
   gap: ^3.0.1
   cached_network_image: ^3.4.1
+  duration: ^4.0.3
 
 dev_dependencies:
   flutter_test:
