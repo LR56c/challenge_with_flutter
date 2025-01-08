@@ -12,22 +12,43 @@ class AnnounceCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
+      height: 150,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8.0),
-        color: const Color(0xff277a63)
-      ),
+          borderRadius: BorderRadius.circular(8.0),
+          color: const Color(0xff277a63)),
       margin: const EdgeInsets.all(16.0),
       padding: const EdgeInsets.all(8.0),
       child: Row(
         children: [
-          Column(
-            children: [
-              Text(announce.title),
-              Text(announce.description),
-            ],
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    announce.title,
+                    style: TextStyle(
+                      fontSize: 28,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Text(
+                    announce.description,
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w300,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
           announce.icon.iconify(
-            color: Colors.white,
+            size: 96,
+            color: Colors.white24,
           ),
         ],
       ),

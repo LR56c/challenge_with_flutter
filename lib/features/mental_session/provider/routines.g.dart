@@ -6,7 +6,7 @@ part of 'routines.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$routinesHash() => r'c5ebf3671ebc8ec2567ed6fdf179a79992e04ea7';
+String _$routinesHash() => r'54b9ac762689af2786249e57d26bf6842e962f2a';
 
 /// See also [Routines].
 @ProviderFor(Routines)
