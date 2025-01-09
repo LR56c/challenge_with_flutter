@@ -20,6 +20,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance;
+
   @override
   void initState() {
     super.initState();
@@ -96,7 +97,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 onPressed: () {
                   context.router.push(const ChristmasCookiesRoute());
                 },
-                child: const Text('Christmas Cookies'))
+                child: const Text('Christmas Cookies')),
+            TextButton(
+                onPressed: () {
+                  context.router.push(const ProfileCardRoute());
+                },
+                child: const Text('Profile Card'))
           ],
         ));
   }

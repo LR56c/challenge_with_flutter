@@ -31,6 +31,7 @@ class AppRouter extends RootStackRouter {
     AutoRoute(page: TodoRoute.page),
     AutoRoute(page: CounterRoute.page),
     AutoRoute(page: ChristmasCookiesRoute.page),
+    AutoRoute(page: ProfileCardRoute.page),
     AutoRoute(page: MentalSessionRoute.page,
       children: [
         AutoRoute(page: PracticeRoute.page),

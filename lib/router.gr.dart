@@ -8,7 +8,7 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:auto_route/auto_route.dart' as _i14;
+import 'package:auto_route/auto_route.dart' as _i15;
 import 'package:challenge_with_flutter/features/christmas_cookies/christmas_cookies_screen.dart'
     as _i1;
 import 'package:challenge_with_flutter/features/counter/counter_screen.dart'
@@ -24,18 +24,20 @@ import 'package:challenge_with_flutter/features/mental_session/screens/notes_scr
 import 'package:challenge_with_flutter/features/mental_session/screens/practice_screen.dart'
     as _i9;
 import 'package:challenge_with_flutter/features/mental_session/screens/profile_screen.dart'
-    as _i10;
+    as _i11;
 import 'package:challenge_with_flutter/features/payment/payment_screen.dart'
     as _i8;
+import 'package:challenge_with_flutter/features/profile_card/profile_card_screen.dart'
+    as _i10;
 import 'package:challenge_with_flutter/features/signin/signin_screen.dart'
-    as _i11;
-import 'package:challenge_with_flutter/features/sms/sms_screen.dart' as _i12;
-import 'package:challenge_with_flutter/features/todo/todo_screen.dart' as _i13;
+    as _i12;
+import 'package:challenge_with_flutter/features/sms/sms_screen.dart' as _i13;
+import 'package:challenge_with_flutter/features/todo/todo_screen.dart' as _i14;
 
 /// generated route for
 /// [_i1.ChristmasCookiesScreen]
-class ChristmasCookiesRoute extends _i14.PageRouteInfo<void> {
-  const ChristmasCookiesRoute({List<_i14.PageRouteInfo>? children})
+class ChristmasCookiesRoute extends _i15.PageRouteInfo<void> {
+  const ChristmasCookiesRoute({List<_i15.PageRouteInfo>? children})
       : super(
           ChristmasCookiesRoute.name,
           initialChildren: children,
@@ -43,7 +45,7 @@ class ChristmasCookiesRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'ChristmasCookiesRoute';
 
-  static _i14.PageInfo page = _i14.PageInfo(
+  static _i15.PageInfo page = _i15.PageInfo(
     name,
     builder: (data) {
       return const _i1.ChristmasCookiesScreen();
@@ -53,8 +55,8 @@ class ChristmasCookiesRoute extends _i14.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i2.CounterScreen]
-class CounterRoute extends _i14.PageRouteInfo<void> {
-  const CounterRoute({List<_i14.PageRouteInfo>? children})
+class CounterRoute extends _i15.PageRouteInfo<void> {
+  const CounterRoute({List<_i15.PageRouteInfo>? children})
       : super(
           CounterRoute.name,
           initialChildren: children,
@@ -62,7 +64,7 @@ class CounterRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'CounterRoute';
 
-  static _i14.PageInfo page = _i14.PageInfo(
+  static _i15.PageInfo page = _i15.PageInfo(
     name,
     builder: (data) {
       return _i2.CounterScreen();
@@ -72,8 +74,8 @@ class CounterRoute extends _i14.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.HomeScreen]
-class HomeRoute extends _i14.PageRouteInfo<void> {
-  const HomeRoute({List<_i14.PageRouteInfo>? children})
+class HomeRoute extends _i15.PageRouteInfo<void> {
+  const HomeRoute({List<_i15.PageRouteInfo>? children})
       : super(
           HomeRoute.name,
           initialChildren: children,
@@ -81,7 +83,7 @@ class HomeRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'HomeRoute';
 
-  static _i14.PageInfo page = _i14.PageInfo(
+  static _i15.PageInfo page = _i15.PageInfo(
     name,
     builder: (data) {
       return const _i3.HomeScreen();
@@ -91,8 +93,8 @@ class HomeRoute extends _i14.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i4.JournalScreen]
-class JournalRoute extends _i14.PageRouteInfo<void> {
-  const JournalRoute({List<_i14.PageRouteInfo>? children})
+class JournalRoute extends _i15.PageRouteInfo<void> {
+  const JournalRoute({List<_i15.PageRouteInfo>? children})
       : super(
           JournalRoute.name,
           initialChildren: children,
@@ -100,7 +102,7 @@ class JournalRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'JournalRoute';
 
-  static _i14.PageInfo page = _i14.PageInfo(
+  static _i15.PageInfo page = _i15.PageInfo(
     name,
     builder: (data) {
       return const _i4.JournalScreen();
@@ -110,8 +112,8 @@ class JournalRoute extends _i14.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i5.MapScreen]
-class MapRoute extends _i14.PageRouteInfo<void> {
-  const MapRoute({List<_i14.PageRouteInfo>? children})
+class MapRoute extends _i15.PageRouteInfo<void> {
+  const MapRoute({List<_i15.PageRouteInfo>? children})
       : super(
           MapRoute.name,
           initialChildren: children,
@@ -119,7 +121,7 @@ class MapRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'MapRoute';
 
-  static _i14.PageInfo page = _i14.PageInfo(
+  static _i15.PageInfo page = _i15.PageInfo(
     name,
     builder: (data) {
       return const _i5.MapScreen();
@@ -129,8 +131,8 @@ class MapRoute extends _i14.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i6.MentalSessionScreen]
-class MentalSessionRoute extends _i14.PageRouteInfo<void> {
-  const MentalSessionRoute({List<_i14.PageRouteInfo>? children})
+class MentalSessionRoute extends _i15.PageRouteInfo<void> {
+  const MentalSessionRoute({List<_i15.PageRouteInfo>? children})
       : super(
           MentalSessionRoute.name,
           initialChildren: children,
@@ -138,7 +140,7 @@ class MentalSessionRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'MentalSessionRoute';
 
-  static _i14.PageInfo page = _i14.PageInfo(
+  static _i15.PageInfo page = _i15.PageInfo(
     name,
     builder: (data) {
       return const _i6.MentalSessionScreen();
@@ -148,8 +150,8 @@ class MentalSessionRoute extends _i14.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i7.NotesScreen]
-class NotesRoute extends _i14.PageRouteInfo<void> {
-  const NotesRoute({List<_i14.PageRouteInfo>? children})
+class NotesRoute extends _i15.PageRouteInfo<void> {
+  const NotesRoute({List<_i15.PageRouteInfo>? children})
       : super(
           NotesRoute.name,
           initialChildren: children,
@@ -157,7 +159,7 @@ class NotesRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'NotesRoute';
 
-  static _i14.PageInfo page = _i14.PageInfo(
+  static _i15.PageInfo page = _i15.PageInfo(
     name,
     builder: (data) {
       return const _i7.NotesScreen();
@@ -167,8 +169,8 @@ class NotesRoute extends _i14.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i8.PaymentScreen]
-class PaymentRoute extends _i14.PageRouteInfo<void> {
-  const PaymentRoute({List<_i14.PageRouteInfo>? children})
+class PaymentRoute extends _i15.PageRouteInfo<void> {
+  const PaymentRoute({List<_i15.PageRouteInfo>? children})
       : super(
           PaymentRoute.name,
           initialChildren: children,
@@ -176,7 +178,7 @@ class PaymentRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'PaymentRoute';
 
-  static _i14.PageInfo page = _i14.PageInfo(
+  static _i15.PageInfo page = _i15.PageInfo(
     name,
     builder: (data) {
       return const _i8.PaymentScreen();
@@ -186,8 +188,8 @@ class PaymentRoute extends _i14.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i9.PracticeScreen]
-class PracticeRoute extends _i14.PageRouteInfo<void> {
-  const PracticeRoute({List<_i14.PageRouteInfo>? children})
+class PracticeRoute extends _i15.PageRouteInfo<void> {
+  const PracticeRoute({List<_i15.PageRouteInfo>? children})
       : super(
           PracticeRoute.name,
           initialChildren: children,
@@ -195,7 +197,7 @@ class PracticeRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'PracticeRoute';
 
-  static _i14.PageInfo page = _i14.PageInfo(
+  static _i15.PageInfo page = _i15.PageInfo(
     name,
     builder: (data) {
       return const _i9.PracticeScreen();
@@ -204,9 +206,28 @@ class PracticeRoute extends _i14.PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [_i10.ProfileScreen]
-class ProfileRoute extends _i14.PageRouteInfo<void> {
-  const ProfileRoute({List<_i14.PageRouteInfo>? children})
+/// [_i10.ProfileCardScreen]
+class ProfileCardRoute extends _i15.PageRouteInfo<void> {
+  const ProfileCardRoute({List<_i15.PageRouteInfo>? children})
+      : super(
+          ProfileCardRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ProfileCardRoute';
+
+  static _i15.PageInfo page = _i15.PageInfo(
+    name,
+    builder: (data) {
+      return const _i10.ProfileCardScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [_i11.ProfileScreen]
+class ProfileRoute extends _i15.PageRouteInfo<void> {
+  const ProfileRoute({List<_i15.PageRouteInfo>? children})
       : super(
           ProfileRoute.name,
           initialChildren: children,
@@ -214,18 +235,18 @@ class ProfileRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'ProfileRoute';
 
-  static _i14.PageInfo page = _i14.PageInfo(
+  static _i15.PageInfo page = _i15.PageInfo(
     name,
     builder: (data) {
-      return const _i10.ProfileScreen();
+      return const _i11.ProfileScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i11.SignInScreen]
-class SignInRoute extends _i14.PageRouteInfo<void> {
-  const SignInRoute({List<_i14.PageRouteInfo>? children})
+/// [_i12.SignInScreen]
+class SignInRoute extends _i15.PageRouteInfo<void> {
+  const SignInRoute({List<_i15.PageRouteInfo>? children})
       : super(
           SignInRoute.name,
           initialChildren: children,
@@ -233,18 +254,18 @@ class SignInRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'SignInRoute';
 
-  static _i14.PageInfo page = _i14.PageInfo(
+  static _i15.PageInfo page = _i15.PageInfo(
     name,
     builder: (data) {
-      return const _i11.SignInScreen();
+      return const _i12.SignInScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i12.SmsScreen]
-class SmsRoute extends _i14.PageRouteInfo<void> {
-  const SmsRoute({List<_i14.PageRouteInfo>? children})
+/// [_i13.SmsScreen]
+class SmsRoute extends _i15.PageRouteInfo<void> {
+  const SmsRoute({List<_i15.PageRouteInfo>? children})
       : super(
           SmsRoute.name,
           initialChildren: children,
@@ -252,18 +273,18 @@ class SmsRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'SmsRoute';
 
-  static _i14.PageInfo page = _i14.PageInfo(
+  static _i15.PageInfo page = _i15.PageInfo(
     name,
     builder: (data) {
-      return const _i12.SmsScreen();
+      return const _i13.SmsScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i13.TodoScreen]
-class TodoRoute extends _i14.PageRouteInfo<void> {
-  const TodoRoute({List<_i14.PageRouteInfo>? children})
+/// [_i14.TodoScreen]
+class TodoRoute extends _i15.PageRouteInfo<void> {
+  const TodoRoute({List<_i15.PageRouteInfo>? children})
       : super(
           TodoRoute.name,
           initialChildren: children,
@@ -271,10 +292,10 @@ class TodoRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'TodoRoute';
 
-  static _i14.PageInfo page = _i14.PageInfo(
+  static _i15.PageInfo page = _i15.PageInfo(
     name,
     builder: (data) {
-      return const _i13.TodoScreen();
+      return const _i14.TodoScreen();
     },
   );
 }
