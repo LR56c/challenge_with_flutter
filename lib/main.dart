@@ -15,7 +15,7 @@ Future<void> _backgroundHandler(RemoteMessage message) async {
   await Firebase.initializeApp();
   await setupFlutterNotifications();
   showFlutterNotification(message);
-  print("Handling a background message: ${message.messageId}");
+  print("Handling a background message: ${message.messageId} - $message");
 }
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

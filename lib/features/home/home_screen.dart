@@ -102,7 +102,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 onPressed: () {
                   context.router.push(const ProfileCardRoute());
                 },
-                child: const Text('Profile Card'))
+                child: const Text('Profile Card')),
+            TextButton(
+                onPressed: () {
+                  context.router.push(const AddToBagRoute());
+                },
+                child: const Text('Add To Bag'))
           ],
         ));
   }
