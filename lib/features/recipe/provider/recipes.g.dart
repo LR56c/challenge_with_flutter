@@ -1,12 +1,12 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'selected_product.dart';
+part of 'recipes.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$selectedProductHash() => r'b401dedad45c9d9465867281179c459c37f3f873';
+String _$selectedRecipeHash() => r'733b7a85a92574b0469c038581919bc4d6c3a3ce';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -29,27 +29,27 @@ class _SystemHash {
   }
 }
 
-/// See also [selectedProduct].
-@ProviderFor(selectedProduct)
-const selectedProductProvider = SelectedProductFamily();
+/// See also [selectedRecipe].
+@ProviderFor(selectedRecipe)
+const selectedRecipeProvider = SelectedRecipeFamily();
 
-/// See also [selectedProduct].
-class SelectedProductFamily extends Family<AsyncValue<ProductBag>> {
-  /// See also [selectedProduct].
-  const SelectedProductFamily();
+/// See also [selectedRecipe].
+class SelectedRecipeFamily extends Family<AsyncValue<Recipe>> {
+  /// See also [selectedRecipe].
+  const SelectedRecipeFamily();
 
-  /// See also [selectedProduct].
-  SelectedProductProvider call(
+  /// See also [selectedRecipe].
+  SelectedRecipeProvider call(
     String id,
   ) {
-    return SelectedProductProvider(
+    return SelectedRecipeProvider(
       id,
     );
   }
 
   @override
-  SelectedProductProvider getProviderOverride(
-    covariant SelectedProductProvider provider,
+  SelectedRecipeProvider getProviderOverride(
+    covariant SelectedRecipeProvider provider,
   ) {
     return call(
       provider.id,
@@ -68,32 +68,32 @@ class SelectedProductFamily extends Family<AsyncValue<ProductBag>> {
       _allTransitiveDependencies;
 
   @override
-  String? get name => r'selectedProductProvider';
+  String? get name => r'selectedRecipeProvider';
 }
 
-/// See also [selectedProduct].
-class SelectedProductProvider extends AutoDisposeFutureProvider<ProductBag> {
-  /// See also [selectedProduct].
-  SelectedProductProvider(
+/// See also [selectedRecipe].
+class SelectedRecipeProvider extends AutoDisposeFutureProvider<Recipe> {
+  /// See also [selectedRecipe].
+  SelectedRecipeProvider(
     String id,
   ) : this._internal(
-          (ref) => selectedProduct(
-            ref as SelectedProductRef,
+          (ref) => selectedRecipe(
+            ref as SelectedRecipeRef,
             id,
           ),
-          from: selectedProductProvider,
-          name: r'selectedProductProvider',
+          from: selectedRecipeProvider,
+          name: r'selectedRecipeProvider',
           debugGetCreateSourceHash:
               const bool.fromEnvironment('dart.vm.product')
                   ? null
-                  : _$selectedProductHash,
-          dependencies: SelectedProductFamily._dependencies,
+                  : _$selectedRecipeHash,
+          dependencies: SelectedRecipeFamily._dependencies,
           allTransitiveDependencies:
-              SelectedProductFamily._allTransitiveDependencies,
+              SelectedRecipeFamily._allTransitiveDependencies,
           id: id,
         );
 
-  SelectedProductProvider._internal(
+  SelectedRecipeProvider._internal(
     super._createNotifier, {
     required super.name,
     required super.dependencies,
@@ -107,12 +107,12 @@ class SelectedProductProvider extends AutoDisposeFutureProvider<ProductBag> {
 
   @override
   Override overrideWith(
-    FutureOr<ProductBag> Function(SelectedProductRef provider) create,
+    FutureOr<Recipe> Function(SelectedRecipeRef provider) create,
   ) {
     return ProviderOverride(
       origin: this,
-      override: SelectedProductProvider._internal(
-        (ref) => create(ref as SelectedProductRef),
+      override: SelectedRecipeProvider._internal(
+        (ref) => create(ref as SelectedRecipeRef),
         from: from,
         name: null,
         dependencies: null,
@@ -124,13 +124,13 @@ class SelectedProductProvider extends AutoDisposeFutureProvider<ProductBag> {
   }
 
   @override
-  AutoDisposeFutureProviderElement<ProductBag> createElement() {
-    return _SelectedProductProviderElement(this);
+  AutoDisposeFutureProviderElement<Recipe> createElement() {
+    return _SelectedRecipeProviderElement(this);
   }
 
   @override
   bool operator ==(Object other) {
-    return other is SelectedProductProvider && other.id == id;
+    return other is SelectedRecipeProvider && other.id == id;
   }
 
   @override
@@ -144,18 +144,17 @@ class SelectedProductProvider extends AutoDisposeFutureProvider<ProductBag> {
 
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
-mixin SelectedProductRef on AutoDisposeFutureProviderRef<ProductBag> {
+mixin SelectedRecipeRef on AutoDisposeFutureProviderRef<Recipe> {
   /// The parameter `id` of this provider.
   String get id;
 }
 
-class _SelectedProductProviderElement
-    extends AutoDisposeFutureProviderElement<ProductBag>
-    with SelectedProductRef {
-  _SelectedProductProviderElement(super.provider);
+class _SelectedRecipeProviderElement
+    extends AutoDisposeFutureProviderElement<Recipe> with SelectedRecipeRef {
+  _SelectedRecipeProviderElement(super.provider);
 
   @override
-  String get id => (origin as SelectedProductProvider).id;
+  String get id => (origin as SelectedRecipeProvider).id;
 }
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package
