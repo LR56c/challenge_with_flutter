@@ -1178,6 +1178,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  sliver_snap:
+    dependency: "direct main"
+    description:
+      name: sliver_snap
+      sha256: bc259fe082264bfe0e8c3dd12cad47bfd828bc211c3d485c5616ff4d499b9c8b
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   source_gen:
     dependency: transitive
     description:

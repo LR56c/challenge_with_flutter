@@ -43,12 +43,12 @@ class MusicEventsScreen extends ConsumerWidget {
           );
         },
         error: () {
-          return Center(
+          return const Center(
             child: Text('Error'),
           );
         },
         loading: () {
-          return Center(
+          return const Center(
             child: CircularProgressIndicator(),
           );
         },

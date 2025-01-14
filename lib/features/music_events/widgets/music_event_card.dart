@@ -88,9 +88,9 @@ class MusicEventCard extends HookConsumerWidget {
                               color: Colors.black,
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Text(
+                            child: const Text(
                               'Buy ticket',
-                              style: const TextStyle(color: Colors.white,
+                              style: TextStyle(color: Colors.white,
                                 fontSize: 12
                               ),
                             )))
