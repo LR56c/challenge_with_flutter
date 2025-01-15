@@ -120,6 +120,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: const Text('Music Events')),
             TextButton(
                 onPressed: () {
+                  context.router.push(const TripRoute());
+                },
+                child: const Text('Trip')),
+            TextButton(
+                onPressed: () {
                   context.router.push(const ImageCarouselRoute());
                 },
                 child: const Text('Image Carousel'))
