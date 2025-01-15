@@ -16,30 +16,31 @@ import 'package:challenge_with_flutter/features/christmas_cookies/christmas_cook
 import 'package:challenge_with_flutter/features/counter/counter_screen.dart'
     as _i3;
 import 'package:challenge_with_flutter/features/home/home_screen.dart' as _i4;
-import 'package:challenge_with_flutter/features/map/map_screen.dart' as _i6;
-import 'package:challenge_with_flutter/features/mental_session/mental_session_screen.dart'
-    as _i7;
-import 'package:challenge_with_flutter/features/mental_session/screens/journal_screen.dart'
+import 'package:challenge_with_flutter/features/image_carousel/image_carousel_screen.dart'
     as _i5;
-import 'package:challenge_with_flutter/features/mental_session/screens/notes_screen.dart'
-    as _i9;
-import 'package:challenge_with_flutter/features/mental_session/screens/practice_screen.dart'
-    as _i11;
-import 'package:challenge_with_flutter/features/mental_session/screens/profile_screen.dart'
-    as _i13;
-import 'package:challenge_with_flutter/features/music_events/music_events_screen.dart'
+import 'package:challenge_with_flutter/features/map/map_screen.dart' as _i7;
+import 'package:challenge_with_flutter/features/mental_session/mental_session_screen.dart'
     as _i8;
-import 'package:challenge_with_flutter/features/payment/payment_screen.dart'
+import 'package:challenge_with_flutter/features/mental_session/screens/journal_screen.dart'
+    as _i6;
+import 'package:challenge_with_flutter/features/mental_session/screens/notes_screen.dart'
     as _i10;
-import 'package:challenge_with_flutter/features/profile_card/profile_card_screen.dart'
+import 'package:challenge_with_flutter/features/mental_session/screens/practice_screen.dart'
     as _i12;
-import 'package:challenge_with_flutter/features/recipe/recipe_screen.dart'
+import 'package:challenge_with_flutter/features/mental_session/screens/profile_screen.dart'
     as _i14;
-import 'package:challenge_with_flutter/features/signin/signin_screen.dart'
+import 'package:challenge_with_flutter/features/music_events/music_events_screen.dart'
+    as _i9;
+import 'package:challenge_with_flutter/features/payment/payment_screen.dart'
+    as _i11;
+import 'package:challenge_with_flutter/features/profile_card/profile_card_screen.dart'
+    as _i13;
+import 'package:challenge_with_flutter/features/recipe/recipe_screen.dart'
     as _i15;
-import 'package:challenge_with_flutter/features/sms/sms_screen.dart' as _i16;
-import 'package:challenge_with_flutter/features/todo/todo_screen.dart' as _i17;
-import 'package:challenge_with_flutter/features/trip/trip_screen.dart' as _i18;
+import 'package:challenge_with_flutter/features/signin/signin_screen.dart'
+    as _i16;
+import 'package:challenge_with_flutter/features/sms/sms_screen.dart' as _i17;
+import 'package:challenge_with_flutter/features/todo/todo_screen.dart' as _i18;
 
 /// generated route for
 /// [_i1.AddToBagScreen]
@@ -118,7 +119,26 @@ class HomeRoute extends _i19.PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [_i5.JournalScreen]
+/// [_i5.ImageCarouselScreen]
+class ImageCarouselRoute extends _i19.PageRouteInfo<void> {
+  const ImageCarouselRoute({List<_i19.PageRouteInfo>? children})
+      : super(
+          ImageCarouselRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ImageCarouselRoute';
+
+  static _i19.PageInfo page = _i19.PageInfo(
+    name,
+    builder: (data) {
+      return const _i5.ImageCarouselScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [_i6.JournalScreen]
 class JournalRoute extends _i19.PageRouteInfo<void> {
   const JournalRoute({List<_i19.PageRouteInfo>? children})
       : super(
@@ -131,13 +151,13 @@ class JournalRoute extends _i19.PageRouteInfo<void> {
   static _i19.PageInfo page = _i19.PageInfo(
     name,
     builder: (data) {
-      return const _i5.JournalScreen();
+      return const _i6.JournalScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i6.MapScreen]
+/// [_i7.MapScreen]
 class MapRoute extends _i19.PageRouteInfo<void> {
   const MapRoute({List<_i19.PageRouteInfo>? children})
       : super(
@@ -150,13 +170,13 @@ class MapRoute extends _i19.PageRouteInfo<void> {
   static _i19.PageInfo page = _i19.PageInfo(
     name,
     builder: (data) {
-      return const _i6.MapScreen();
+      return const _i7.MapScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i7.MentalSessionScreen]
+/// [_i8.MentalSessionScreen]
 class MentalSessionRoute extends _i19.PageRouteInfo<void> {
   const MentalSessionRoute({List<_i19.PageRouteInfo>? children})
       : super(
@@ -169,13 +189,13 @@ class MentalSessionRoute extends _i19.PageRouteInfo<void> {
   static _i19.PageInfo page = _i19.PageInfo(
     name,
     builder: (data) {
-      return const _i7.MentalSessionScreen();
+      return const _i8.MentalSessionScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i8.MusicEventsScreen]
+/// [_i9.MusicEventsScreen]
 class MusicEventsRoute extends _i19.PageRouteInfo<void> {
   const MusicEventsRoute({List<_i19.PageRouteInfo>? children})
       : super(
@@ -188,13 +208,13 @@ class MusicEventsRoute extends _i19.PageRouteInfo<void> {
   static _i19.PageInfo page = _i19.PageInfo(
     name,
     builder: (data) {
-      return const _i8.MusicEventsScreen();
+      return const _i9.MusicEventsScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i9.NotesScreen]
+/// [_i10.NotesScreen]
 class NotesRoute extends _i19.PageRouteInfo<void> {
   const NotesRoute({List<_i19.PageRouteInfo>? children})
       : super(
@@ -207,13 +227,13 @@ class NotesRoute extends _i19.PageRouteInfo<void> {
   static _i19.PageInfo page = _i19.PageInfo(
     name,
     builder: (data) {
-      return const _i9.NotesScreen();
+      return const _i10.NotesScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i10.PaymentScreen]
+/// [_i11.PaymentScreen]
 class PaymentRoute extends _i19.PageRouteInfo<void> {
   const PaymentRoute({List<_i19.PageRouteInfo>? children})
       : super(
@@ -226,13 +246,13 @@ class PaymentRoute extends _i19.PageRouteInfo<void> {
   static _i19.PageInfo page = _i19.PageInfo(
     name,
     builder: (data) {
-      return const _i10.PaymentScreen();
+      return const _i11.PaymentScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i11.PracticeScreen]
+/// [_i12.PracticeScreen]
 class PracticeRoute extends _i19.PageRouteInfo<void> {
   const PracticeRoute({List<_i19.PageRouteInfo>? children})
       : super(
@@ -245,13 +265,13 @@ class PracticeRoute extends _i19.PageRouteInfo<void> {
   static _i19.PageInfo page = _i19.PageInfo(
     name,
     builder: (data) {
-      return const _i11.PracticeScreen();
+      return const _i12.PracticeScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i12.ProfileCardScreen]
+/// [_i13.ProfileCardScreen]
 class ProfileCardRoute extends _i19.PageRouteInfo<void> {
   const ProfileCardRoute({List<_i19.PageRouteInfo>? children})
       : super(
@@ -264,13 +284,13 @@ class ProfileCardRoute extends _i19.PageRouteInfo<void> {
   static _i19.PageInfo page = _i19.PageInfo(
     name,
     builder: (data) {
-      return const _i12.ProfileCardScreen();
+      return const _i13.ProfileCardScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i13.ProfileScreen]
+/// [_i14.ProfileScreen]
 class ProfileRoute extends _i19.PageRouteInfo<void> {
   const ProfileRoute({List<_i19.PageRouteInfo>? children})
       : super(
@@ -283,13 +303,13 @@ class ProfileRoute extends _i19.PageRouteInfo<void> {
   static _i19.PageInfo page = _i19.PageInfo(
     name,
     builder: (data) {
-      return const _i13.ProfileScreen();
+      return const _i14.ProfileScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i14.RecipeScreen]
+/// [_i15.RecipeScreen]
 class RecipeRoute extends _i19.PageRouteInfo<void> {
   const RecipeRoute({List<_i19.PageRouteInfo>? children})
       : super(
@@ -302,13 +322,13 @@ class RecipeRoute extends _i19.PageRouteInfo<void> {
   static _i19.PageInfo page = _i19.PageInfo(
     name,
     builder: (data) {
-      return const _i14.RecipeScreen();
+      return const _i15.RecipeScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i15.SignInScreen]
+/// [_i16.SignInScreen]
 class SignInRoute extends _i19.PageRouteInfo<void> {
   const SignInRoute({List<_i19.PageRouteInfo>? children})
       : super(
@@ -321,13 +341,13 @@ class SignInRoute extends _i19.PageRouteInfo<void> {
   static _i19.PageInfo page = _i19.PageInfo(
     name,
     builder: (data) {
-      return const _i15.SignInScreen();
+      return const _i16.SignInScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i16.SmsScreen]
+/// [_i17.SmsScreen]
 class SmsRoute extends _i19.PageRouteInfo<void> {
   const SmsRoute({List<_i19.PageRouteInfo>? children})
       : super(
@@ -340,13 +360,13 @@ class SmsRoute extends _i19.PageRouteInfo<void> {
   static _i19.PageInfo page = _i19.PageInfo(
     name,
     builder: (data) {
-      return const _i16.SmsScreen();
+      return const _i17.SmsScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i17.TodoScreen]
+/// [_i18.TodoScreen]
 class TodoRoute extends _i19.PageRouteInfo<void> {
   const TodoRoute({List<_i19.PageRouteInfo>? children})
       : super(
@@ -359,26 +379,7 @@ class TodoRoute extends _i19.PageRouteInfo<void> {
   static _i19.PageInfo page = _i19.PageInfo(
     name,
     builder: (data) {
-      return const _i17.TodoScreen();
-    },
-  );
-}
-
-/// generated route for
-/// [_i18.TripScreen]
-class TripRoute extends _i19.PageRouteInfo<void> {
-  const TripRoute({List<_i19.PageRouteInfo>? children})
-      : super(
-          TripRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'TripRoute';
-
-  static _i19.PageInfo page = _i19.PageInfo(
-    name,
-    builder: (data) {
-      return const _i18.TripScreen();
+      return const _i18.TodoScreen();
     },
   );
 }
