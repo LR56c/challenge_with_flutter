@@ -21,7 +21,7 @@ Show _$ShowFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Show {
   DateTime get time => throw _privateConstructorUsedError;
-  int get availableSeats => throw _privateConstructorUsedError;
+  List<ShowSeat> get seats => throw _privateConstructorUsedError;
 
   /// Serializes this Show to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -37,7 +37,7 @@ abstract class $ShowCopyWith<$Res> {
   factory $ShowCopyWith(Show value, $Res Function(Show) then) =
       _$ShowCopyWithImpl<$Res, Show>;
   @useResult
-  $Res call({DateTime time, int availableSeats});
+  $Res call({DateTime time, List<ShowSeat> seats});
 }
 
 /// @nodoc
@@ -56,17 +56,17 @@ class _$ShowCopyWithImpl<$Res, $Val extends Show>
   @override
   $Res call({
     Object? time = null,
-    Object? availableSeats = null,
+    Object? seats = null,
   }) {
     return _then(_value.copyWith(
       time: null == time
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      availableSeats: null == availableSeats
-          ? _value.availableSeats
-          : availableSeats // ignore: cast_nullable_to_non_nullable
-              as int,
+      seats: null == seats
+          ? _value.seats
+          : seats // ignore: cast_nullable_to_non_nullable
+              as List<ShowSeat>,
     ) as $Val);
   }
 }
@@ -78,7 +78,7 @@ abstract class _$$ShowImplCopyWith<$Res> implements $ShowCopyWith<$Res> {
       __$$ShowImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({DateTime time, int availableSeats});
+  $Res call({DateTime time, List<ShowSeat> seats});
 }
 
 /// @nodoc
@@ -94,17 +94,17 @@ class __$$ShowImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? time = null,
-    Object? availableSeats = null,
+    Object? seats = null,
   }) {
     return _then(_$ShowImpl(
       time: null == time
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      availableSeats: null == availableSeats
-          ? _value.availableSeats
-          : availableSeats // ignore: cast_nullable_to_non_nullable
-              as int,
+      seats: null == seats
+          ? _value._seats
+          : seats // ignore: cast_nullable_to_non_nullable
+              as List<ShowSeat>,
     ));
   }
 }
@@ -112,19 +112,25 @@ class __$$ShowImplCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$ShowImpl implements _Show {
-  const _$ShowImpl({required this.time, required this.availableSeats});
+  const _$ShowImpl({required this.time, required final List<ShowSeat> seats})
+      : _seats = seats;
 
   factory _$ShowImpl.fromJson(Map<String, dynamic> json) =>
       _$$ShowImplFromJson(json);
 
   @override
   final DateTime time;
+  final List<ShowSeat> _seats;
   @override
-  final int availableSeats;
+  List<ShowSeat> get seats {
+    if (_seats is EqualUnmodifiableListView) return _seats;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_seats);
+  }
 
   @override
   String toString() {
-    return 'Show(time: $time, availableSeats: $availableSeats)';
+    return 'Show(time: $time, seats: $seats)';
   }
 
   @override
@@ -133,13 +139,13 @@ class _$ShowImpl implements _Show {
         (other.runtimeType == runtimeType &&
             other is _$ShowImpl &&
             (identical(other.time, time) || other.time == time) &&
-            (identical(other.availableSeats, availableSeats) ||
-                other.availableSeats == availableSeats));
+            const DeepCollectionEquality().equals(other._seats, _seats));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, time, availableSeats);
+  int get hashCode => Object.hash(
+      runtimeType, time, const DeepCollectionEquality().hash(_seats));
 
   /// Create a copy of Show
   /// with the given fields replaced by the non-null parameter values.
@@ -160,14 +166,14 @@ class _$ShowImpl implements _Show {
 abstract class _Show implements Show {
   const factory _Show(
       {required final DateTime time,
-      required final int availableSeats}) = _$ShowImpl;
+      required final List<ShowSeat> seats}) = _$ShowImpl;
 
   factory _Show.fromJson(Map<String, dynamic> json) = _$ShowImpl.fromJson;
 
   @override
   DateTime get time;
   @override
-  int get availableSeats;
+  List<ShowSeat> get seats;
 
   /// Create a copy of Show
   /// with the given fields replaced by the non-null parameter values.

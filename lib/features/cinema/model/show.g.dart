@@ -8,11 +8,13 @@ part of 'show.dart';
 
 _$ShowImpl _$$ShowImplFromJson(Map<String, dynamic> json) => _$ShowImpl(
       time: DateTime.parse(json['time'] as String),
-      availableSeats: (json['availableSeats'] as num).toInt(),
+      seats: (json['seats'] as List<dynamic>)
+          .map((e) => ShowSeat.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
 
 Map<String, dynamic> _$$ShowImplToJson(_$ShowImpl instance) =>
     <String, dynamic>{
       'time': instance.time.toIso8601String(),
-      'availableSeats': instance.availableSeats,
+      'seats': instance.seats,
     };

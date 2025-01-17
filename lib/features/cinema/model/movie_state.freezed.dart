@@ -20,21 +20,21 @@ mixin _$MovieState {
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
     required TResult Function() error,
-    required TResult Function(Movie movie, List<Show> shows) data,
+    required TResult Function(Movie movie, List<ShowCinema> shows) data,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loading,
     TResult? Function()? error,
-    TResult? Function(Movie movie, List<Show> shows)? data,
+    TResult? Function(Movie movie, List<ShowCinema> shows)? data,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
     TResult Function()? error,
-    TResult Function(Movie movie, List<Show> shows)? data,
+    TResult Function(Movie movie, List<ShowCinema> shows)? data,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -126,7 +126,7 @@ class _$MovieLoadingImpl implements MovieLoading {
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
     required TResult Function() error,
-    required TResult Function(Movie movie, List<Show> shows) data,
+    required TResult Function(Movie movie, List<ShowCinema> shows) data,
   }) {
     return loading();
   }
@@ -136,7 +136,7 @@ class _$MovieLoadingImpl implements MovieLoading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loading,
     TResult? Function()? error,
-    TResult? Function(Movie movie, List<Show> shows)? data,
+    TResult? Function(Movie movie, List<ShowCinema> shows)? data,
   }) {
     return loading?.call();
   }
@@ -146,7 +146,7 @@ class _$MovieLoadingImpl implements MovieLoading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
     TResult Function()? error,
-    TResult Function(Movie movie, List<Show> shows)? data,
+    TResult Function(Movie movie, List<ShowCinema> shows)? data,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -237,7 +237,7 @@ class _$MovieErrorImpl implements MovieError {
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
     required TResult Function() error,
-    required TResult Function(Movie movie, List<Show> shows) data,
+    required TResult Function(Movie movie, List<ShowCinema> shows) data,
   }) {
     return error();
   }
@@ -247,7 +247,7 @@ class _$MovieErrorImpl implements MovieError {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loading,
     TResult? Function()? error,
-    TResult? Function(Movie movie, List<Show> shows)? data,
+    TResult? Function(Movie movie, List<ShowCinema> shows)? data,
   }) {
     return error?.call();
   }
@@ -257,7 +257,7 @@ class _$MovieErrorImpl implements MovieError {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
     TResult Function()? error,
-    TResult Function(Movie movie, List<Show> shows)? data,
+    TResult Function(Movie movie, List<ShowCinema> shows)? data,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -311,7 +311,7 @@ abstract class _$$MovieDataImplCopyWith<$Res> {
           _$MovieDataImpl value, $Res Function(_$MovieDataImpl) then) =
       __$$MovieDataImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({Movie movie, List<Show> shows});
+  $Res call({Movie movie, List<ShowCinema> shows});
 
   $MovieCopyWith<$Res> get movie;
 }
@@ -340,7 +340,7 @@ class __$$MovieDataImplCopyWithImpl<$Res>
       null == shows
           ? _value._shows
           : shows // ignore: cast_nullable_to_non_nullable
-              as List<Show>,
+              as List<ShowCinema>,
     ));
   }
 
@@ -358,13 +358,14 @@ class __$$MovieDataImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$MovieDataImpl implements MovieData {
-  const _$MovieDataImpl(this.movie, final List<Show> shows) : _shows = shows;
+  const _$MovieDataImpl(this.movie, final List<ShowCinema> shows)
+      : _shows = shows;
 
   @override
   final Movie movie;
-  final List<Show> _shows;
+  final List<ShowCinema> _shows;
   @override
-  List<Show> get shows {
+  List<ShowCinema> get shows {
     if (_shows is EqualUnmodifiableListView) return _shows;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_shows);
@@ -401,7 +402,7 @@ class _$MovieDataImpl implements MovieData {
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
     required TResult Function() error,
-    required TResult Function(Movie movie, List<Show> shows) data,
+    required TResult Function(Movie movie, List<ShowCinema> shows) data,
   }) {
     return data(movie, shows);
   }
@@ -411,7 +412,7 @@ class _$MovieDataImpl implements MovieData {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loading,
     TResult? Function()? error,
-    TResult? Function(Movie movie, List<Show> shows)? data,
+    TResult? Function(Movie movie, List<ShowCinema> shows)? data,
   }) {
     return data?.call(movie, shows);
   }
@@ -421,7 +422,7 @@ class _$MovieDataImpl implements MovieData {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
     TResult Function()? error,
-    TResult Function(Movie movie, List<Show> shows)? data,
+    TResult Function(Movie movie, List<ShowCinema> shows)? data,
     required TResult orElse(),
   }) {
     if (data != null) {
@@ -466,11 +467,11 @@ class _$MovieDataImpl implements MovieData {
 }
 
 abstract class MovieData implements MovieState {
-  const factory MovieData(final Movie movie, final List<Show> shows) =
+  const factory MovieData(final Movie movie, final List<ShowCinema> shows) =
       _$MovieDataImpl;
 
   Movie get movie;
-  List<Show> get shows;
+  List<ShowCinema> get shows;
 
   /// Create a copy of MovieState
   /// with the given fields replaced by the non-null parameter values.
