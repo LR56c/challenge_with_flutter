@@ -38,6 +38,8 @@ dependencies:
   intl: ^0.20.1
   sliver_snap: ^2.0.0
   carousel_slider: ^5.0.0
+  dropdown_textfield: ^1.2.0
+  accordion: ^2.6.0
 
 dev_dependencies:
   flutter_test:

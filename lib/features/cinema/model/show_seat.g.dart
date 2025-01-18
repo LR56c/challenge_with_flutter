@@ -11,7 +11,6 @@ _$ShowSeatImpl _$$ShowSeatImplFromJson(Map<String, dynamic> json) =>
       id: json['id'] as String,
       row: json['row'] as String,
       number: (json['number'] as num).toInt(),
-      isAvailable: json['isAvailable'] as bool,
       seatStatus: (json['seatStatus'] as num).toInt(),
     );
 
@@ -20,6 +19,5 @@ Map<String, dynamic> _$$ShowSeatImplToJson(_$ShowSeatImpl instance) =>
       'id': instance.id,
       'row': instance.row,
       'number': instance.number,
-      'isAvailable': instance.isAvailable,
       'seatStatus': instance.seatStatus,
     };

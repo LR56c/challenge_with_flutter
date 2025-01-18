@@ -9,7 +9,6 @@ class ShowSeat with _$ShowSeat {
     required String id,
     required String row,
     required int number,
-    required bool isAvailable,
     required int seatStatus,
   }) = _ShowSeat;
   factory ShowSeat.fromJson(Map<String, Object?> json) => _$ShowSeatFromJson(json);
