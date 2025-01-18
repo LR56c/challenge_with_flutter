@@ -23,7 +23,6 @@ mixin _$ShowSeat {
   String get id => throw _privateConstructorUsedError;
   String get row => throw _privateConstructorUsedError;
   int get number => throw _privateConstructorUsedError;
-  bool get isAvailable => throw _privateConstructorUsedError;
   int get seatStatus => throw _privateConstructorUsedError;
 
   /// Serializes this ShowSeat to a JSON map.
@@ -41,8 +40,7 @@ abstract class $ShowSeatCopyWith<$Res> {
   factory $ShowSeatCopyWith(ShowSeat value, $Res Function(ShowSeat) then) =
       _$ShowSeatCopyWithImpl<$Res, ShowSeat>;
   @useResult
-  $Res call(
-      {String id, String row, int number, bool isAvailable, int seatStatus});
+  $Res call({String id, String row, int number, int seatStatus});
 }
 
 /// @nodoc
@@ -63,7 +61,6 @@ class _$ShowSeatCopyWithImpl<$Res, $Val extends ShowSeat>
     Object? id = null,
     Object? row = null,
     Object? number = null,
-    Object? isAvailable = null,
     Object? seatStatus = null,
   }) {
     return _then(_value.copyWith(
@@ -79,10 +76,6 @@ class _$ShowSeatCopyWithImpl<$Res, $Val extends ShowSeat>
           ? _value.number
           : number // ignore: cast_nullable_to_non_nullable
               as int,
-      isAvailable: null == isAvailable
-          ? _value.isAvailable
-          : isAvailable // ignore: cast_nullable_to_non_nullable
-              as bool,
       seatStatus: null == seatStatus
           ? _value.seatStatus
           : seatStatus // ignore: cast_nullable_to_non_nullable
@@ -99,8 +92,7 @@ abstract class _$$ShowSeatImplCopyWith<$Res>
       __$$ShowSeatImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {String id, String row, int number, bool isAvailable, int seatStatus});
+  $Res call({String id, String row, int number, int seatStatus});
 }
 
 /// @nodoc
@@ -119,7 +111,6 @@ class __$$ShowSeatImplCopyWithImpl<$Res>
     Object? id = null,
     Object? row = null,
     Object? number = null,
-    Object? isAvailable = null,
     Object? seatStatus = null,
   }) {
     return _then(_$ShowSeatImpl(
@@ -135,10 +126,6 @@ class __$$ShowSeatImplCopyWithImpl<$Res>
           ? _value.number
           : number // ignore: cast_nullable_to_non_nullable
               as int,
-      isAvailable: null == isAvailable
-          ? _value.isAvailable
-          : isAvailable // ignore: cast_nullable_to_non_nullable
-              as bool,
       seatStatus: null == seatStatus
           ? _value.seatStatus
           : seatStatus // ignore: cast_nullable_to_non_nullable
@@ -154,7 +141,6 @@ class _$ShowSeatImpl implements _ShowSeat {
       {required this.id,
       required this.row,
       required this.number,
-      required this.isAvailable,
       required this.seatStatus});
 
   factory _$ShowSeatImpl.fromJson(Map<String, dynamic> json) =>
@@ -167,13 +153,11 @@ class _$ShowSeatImpl implements _ShowSeat {
   @override
   final int number;
   @override
-  final bool isAvailable;
-  @override
   final int seatStatus;
 
   @override
   String toString() {
-    return 'ShowSeat(id: $id, row: $row, number: $number, isAvailable: $isAvailable, seatStatus: $seatStatus)';
+    return 'ShowSeat(id: $id, row: $row, number: $number, seatStatus: $seatStatus)';
   }
 
   @override
@@ -184,16 +168,13 @@ class _$ShowSeatImpl implements _ShowSeat {
             (identical(other.id, id) || other.id == id) &&
             (identical(other.row, row) || other.row == row) &&
             (identical(other.number, number) || other.number == number) &&
-            (identical(other.isAvailable, isAvailable) ||
-                other.isAvailable == isAvailable) &&
             (identical(other.seatStatus, seatStatus) ||
                 other.seatStatus == seatStatus));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, row, number, isAvailable, seatStatus);
+  int get hashCode => Object.hash(runtimeType, id, row, number, seatStatus);
 
   /// Create a copy of ShowSeat
   /// with the given fields replaced by the non-null parameter values.
@@ -216,7 +197,6 @@ abstract class _ShowSeat implements ShowSeat {
       {required final String id,
       required final String row,
       required final int number,
-      required final bool isAvailable,
       required final int seatStatus}) = _$ShowSeatImpl;
 
   factory _ShowSeat.fromJson(Map<String, dynamic> json) =
@@ -228,8 +208,6 @@ abstract class _ShowSeat implements ShowSeat {
   String get row;
   @override
   int get number;
-  @override
-  bool get isAvailable;
   @override
   int get seatStatus;
 

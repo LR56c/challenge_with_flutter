@@ -31,6 +31,7 @@ class AppRouter extends RootStackRouter {
     AutoRoute(page: TodoRoute.page),
     AutoRoute(page: TripRoute.page),
     AutoRoute(page: CinemaRoute.page),
+    AutoRoute(page: CinemaStep1Route.page),
     AutoRoute(page: RecipeRoute.page),
     AutoRoute(page: MusicEventsRoute.page),
     AutoRoute(page: CounterRoute.page),

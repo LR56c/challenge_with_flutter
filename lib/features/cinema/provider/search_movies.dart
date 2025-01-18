@@ -35,17 +35,70 @@ MovieState searchMovies(Ref ref, String movieName) {
           "Normal"
         ],
         shows: [
+          Show(time: DateTime(2025, 1, 16, 12, 30), seats: [
+            ...List.generate(
+              10,
+                  (index) => List.generate(
+                10,
+                    (subIndex) => ShowSeat(
+                  id: const Uuid().v4(),
+                  number: subIndex + 1,
+                  row: String.fromCharCode(65 + index),
+                  seatStatus: 0,
+                ),
+              ),
+            ).expand((element) => element)
+          ]),
+          Show(time: DateTime(2025, 1, 16, 15, 30), seats: [
+            ...List.generate(
+              10,
+                  (index) => List.generate(
+                10,
+                    (subIndex) => ShowSeat(
+                  id: const Uuid().v4(),
+                  number: subIndex + 1,
+                  row: String.fromCharCode(65 + index),
+                  seatStatus: 0,
+                ),
+              ),
+            ).expand((element) => element)
+          ]),
           Show(time: DateTime(2025, 1, 16, 20, 30), seats: [
             ...List.generate(
               10,
               (index) => List.generate(
                 10,
                 (subIndex) => ShowSeat(
-                  id : Uuid().v4(),
+                  id: const Uuid().v4(),
                   number: subIndex + 1,
                   row: String.fromCharCode(65 + index),
                   seatStatus: 0,
-                  isAvailable: true,
+                ),
+              ),
+            ).expand((element) => element)
+          ]),
+
+        ]),
+    ShowCinema(
+        id: const Uuid().v4(),
+        movieTitle: "The boy and the heron",
+        date: DateTime.now(),
+        location: "Cinema 2",
+        seatTypes: [
+          "VIP",
+          "Normal"
+        ],
+        shows: [
+          Show(time: DateTime(2025, 1, 16, 10, 30), seats: [
+            ...List.generate(
+              10,
+              (index) => List.generate(
+                10,
+                (subIndex) => ShowSeat(
+                  id: const Uuid().v4(),
+                  number: subIndex + 1,
+                  row: String.fromCharCode(65 + index),
+                  seatStatus: 0,
                 ),
               ),
             ).expand((element) => element)
